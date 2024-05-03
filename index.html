@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary Concierge</title>
+  <link rel="shortcut icon" type="image/png" href="logo.png">
+  <style>
+    body {
+      background: #FFFFFF;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to left, #e47200, #e69b00, #e6b400); 
+      color: white;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: xx-large;
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      background-color: #FFD000; 
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #FEE69F; /* Lighter Yellow */
+    }
+
+    nav a:hover, nav a.active {
+      color: #e47200; /* Update the color to match the gradient */
+    }
+
+    section {
+      padding: 4rem 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section h2, section p {
+      justify-content: center; /* Align the text at the center */
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    @media screen and (max-width: 768px) {
+  header {
+    font-size: large;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    flex: 1 0 50%;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  section h2 {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    font-size: medium;
+  }
+
+  nav a {
+    flex: 1 0 100%;
+  }
+}
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+      <h1>Welcome to Culinary Concierge!</h1>
+      <img src="logo.png" alt="Culinary Concierge Logo" class="logo">
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a> <!-- Update the link to point to the menu.html file -->
+    <a href="#" class="active">Locations</a>
+    <a href="about.html" class="active">About</a> <!-- Update the link to the desired about page -->
+  </nav>
+
+  <section>
+    <h2>Delicious Food at Culinary Concierge</h2>
+    <p>Experience our wide range of mouthwatering dishes.</p>
+    Welcome to Culinary Concierge, your ultimate destination for personalized culinary experiences. We are passionate about creating unforgettable gastronomic journeys tailored to your unique preferences and desires.
+    At Culinary Concierge, we understand that food is not just about nourishment; it's an art form that brings people together, evokes emotions, and creates lifelong memories. Whether you're a passionate foodie, a connoisseur seeking new flavors, or someone looking to celebrate a special occasion, our team is here to curate exceptional culinary adventures for you.
+  </section>
+
+  <section>
+    <h2>Find a Culinary Concierge Near You</h2>
+    <p>Visit any of our convenient locations.</p>
+    123 Main Street, City
+    456 Park Avenue, Town
+    789 Elm Road, Village
+    987 Maple Lane, Suburb
+    321 Oak Street, Hamlet
+    654 Pine Avenue, Borough
+    890 Cedar Court, Township
+    234 Walnut Drive, County
+    567 Birch Terrace, District
+    876 Spruce Circle, Settlement
+  </section>
+
+  <section>
+    <h2>About Culinary Concierge</h2>
+    <p>Learn more about our story and mission.</p>
+    Culinary Concierge was born out of a shared passion for food, travel, and creating extraordinary culinary experiences. It all started when our founder, Sarah, embarked on a journey to explore the world's diverse cuisines. From the bustling street food markets of Southeast Asia to the Michelin-starred restaurants of Europe, Sarah's culinary adventures ignited a deep appreciation for the power of food to connect people and cultures.
+    Inspired by her experiences, Sarah envisioned a platform that would bring together food enthusiasts, talented chefs, and discerning travelers to create unforgettable gastronomic journeys. In 2010, Culinary Concierge was established with the mission to curate personalized culinary experiences that would tantalize taste buds, foster cultural understanding, and leave a lasting impact on all who partake in the culinary adventures we offer.
+  </section>
+
+<!-- Contact Information -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out to us with any inquiries or to book your culinary experience.</p>
+    
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>123 Main Street, City</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>+1 123-456-7890</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>info@culinaryconcierge.com</span>
+      </div>
+    </div>
+  </section>
+  
+<section id="contact-form" style="text-align: center;">
+  <h3>Keep in Touch</h3>
+  <form style="display: flex; flex-direction: column; align-items: center;">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="form-group" style="text-align: center;">
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</section>
+  
+  <style>
+    .form-group {
+      margin-bottom: 10px;
+    }
+  
+    label {
+      display: block;
+      font-weight: bold;
+    }
+  </style>
+
+  <footer>
+    <p>© 2024 Culinary Concierge. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
