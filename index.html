@@ -56,7 +56,7 @@
     }
 
     section h2, section p {
-      justify-content: center; /* Align the text at the center */
+      justify-content: center; 
     }
 
     footer {
@@ -66,43 +66,41 @@
       padding: 2rem 0;
     }
     @media screen and (max-width: 768px) {
-  header {
-    font-size: large;
+  
+    header {
+      font-size: large; 
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+    }
+
+    nav a {
+      flex: 1 0 50%;
+    }
+
+    section {
+      padding: 2rem 0; 
+    }
+
+    section h2 {
+      font-size: large; 
+    }
   }
 
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  @media screen and (max-width: 480px) {
+    
+    header {
+      font-size: medium; 
+    }
 
-  nav a {
-    flex: 1 0 50%;
+    nav a {
+      flex: 1 0 100%; 
+    }
   }
-
-  section {
-    padding: 2rem 0;
-  }
-
-  section h2 {
-    font-size: large;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    font-size: medium;
-  }
-
-  nav a {
-    flex: 1 0 100%;
-  }
-}
-.logo {
-  max-width: 100%;
-  height: auto;
-  margin-top: 1rem;
-}
+</style>
   </style>
 </head>
 
