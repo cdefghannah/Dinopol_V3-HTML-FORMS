@@ -111,21 +111,40 @@
       display: block;
       font-weight: bold;
     }
+
+    .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+    .logo {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: 30px auto;
+    }
+
   </style>
 </head>
 
 <body>
   <header>
     <h1>Welcome to Culinary Concierge!</h1>
-    <img src="logo.png" alt="Culinary Concierge Logo" class="logo">
   </header>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a> <!-- Update the link to point to the menu.html file -->
+    <a href="menu.html">Menu</a>
     <a href="#" class="active">Locations</a>
-    <a href="about.html" class="active">About</a> <!-- Update the link to the desired about page -->
+    <a href="about.html" class="active">About</a>
   </nav>
+
+  <div class="logo-container">
+  <img src="logo.png" alt="Culinary Concierge Logo" class="logo">
+  </div>
 
   <section>
     <h2>Delicious Food at Culinary Concierge</h2>
