@@ -66,48 +66,58 @@
       padding: 2rem 0;
     }
     @media screen and (max-width: 768px) {
-  
-    header {
-      font-size: large; 
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; 
-    }
-
-    nav a {
-      flex: 1 0 50%;
-    }
-
-    section {
-      padding: 2rem 0; 
-    }
-
-    section h2 {
-      font-size: large; 
-    }
-  }
-
-  @media screen and (max-width: 480px) {
+      header {
+        font-size: large; 
+      }
     
-    header {
-      font-size: medium; 
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+      }
+    
+      nav a {
+        flex: 1 0 50%;
+      }
+    
+      section {
+        padding: 2rem 0; 
+      }
+    
+      section h2 {
+        font-size: large; 
+      }
     }
-
-    nav a {
-      flex: 1 0 100%; 
+    
+    @media screen and (max-width: 480px) {
+      header {
+        font-size: medium; 
+      }
+    
+      nav a {
+        flex: 1 0 100%; 
+      }
     }
-  }
-</style>
+  
+    #contact-form {
+      text-align: center;
+    }
+  
+    .form-group {
+      margin-bottom: 10px;
+    }
+  
+    label {
+      display: block;
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
   <header>
-      <h1>Welcome to Culinary Concierge!</h1>
-      <img src="logo.png" alt="Culinary Concierge Logo" class="logo">
+    <h1>Welcome to Culinary Concierge!</h1>
+    <img src="logo.png" alt="Culinary Concierge Logo" class="logo">
   </header>
 
   <nav>
@@ -146,62 +156,10 @@
     Inspired by her experiences, Sarah envisioned a platform that would bring together food enthusiasts, talented chefs, and discerning travelers to create unforgettable gastronomic journeys. In 2010, Culinary Concierge was established with the mission to curate personalized culinary experiences that would tantalize taste buds, foster cultural understanding, and leave a lasting impact on all who partake in the culinary adventures we offer.
   </section>
 
-<!-- Contact Information -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>We'd love to hear from you! Reach out to us with any inquiries or to book your culinary experience.</p>
-    
-    <div class="contact-info">
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>123 Main Street, City</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <span>+1 123-456-7890</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <span>info@culinaryconcierge.com</span>
-      </div>
-    </div>
-  </section>
-  
-<section id="contact-form" style="text-align: center;">
-  <h3>Keep in Touch</h3>
-  <form style="display: flex; flex-direction: column; align-items: center;">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-    <div class="form-group" style="text-align: center;">
-      <button type="submit">Send Message</button>
-    </div>
-  </form>
-</section>
-  
-  <style>
-    .form-group {
-      margin-bottom: 10px;
-    }
-  
-    label {
-      display: block;
-      font-weight: bold;
-    }
-  </style>
+<footer>
+  <p>&copy; 2022 Culinary Concierge. All rights reserved.</p>
+</footer>
 
-  <footer>
-    <p>© 2024 Culinary Concierge. All rights reserved.</p>
-  </footer>
 </body>
 
 </html>
