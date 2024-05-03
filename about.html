@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary Concierge - About</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    body {
+      background: #FFFFFF;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to left, #e47200, #e69b00, #e6b400); 
+      color: white;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: x-large;
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      background-color: #FFD000; 
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    nav a:hover {
+      background-color: #FEE69F;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #e47200;
+    }
+
+    section {
+      padding: 6rem 0 4rem 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section h2,
+    section p {
+      justify-content: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+        @media screen and (max-width: 768px) {
+    header h1 {
+        font-size: large;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+    }
+  </style>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary Concierge - About</title>
+  <style>
+    /* CSS styles here */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Culinary Concierge!</h1>
+  </header>
+
+  <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="locations.html">Locations</a>
+        <a href="about.html">About</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Culinary Concierge</h2>
+    <p>Welcome to Culinary Concierge, your ultimate destination for personalized culinary experiences. We are passionate about creating unforgettable gastronomic journeys tailored to your unique preferences and desires.</p>
+
+    <p>At Culinary Concierge, we understand that food is not just about nourishment; it's an art form that brings people together, evokes emotions, and creates lifelong memories. Whether you're a passionate foodie, a connoisseur seeking new flavors, or someone looking to celebrate a special occasion, our team is here to curate exceptional culinary adventures for you.</p>
+
+    <h3>Our Services:</h3>
+    <ol>
+      <li>Private Chef Experiences: Indulge in the luxury of having a professional chef create a bespoke dining experience in the comfort of your own home or chosen venue. From intimate dinners to larger gatherings, our talented chefs will delight your palate with exquisite dishes tailored to your preferences.</li>
+      <li>Gourmet Tours: Embark on a culinary journey to explore the vibrant food scene of various destinations. Our expert guides will take you to hidden gems, local markets, and renowned restaurants, allowing you to savor the authentic flavors of the region.</li>
+      <li>Cooking Classes: Unleash your inner chef and enhance your culinary skills with our interactive cooking classes. Learn from experienced chefs as they share their knowledge, techniques, and secrets behind creating delicious dishes.</li>
+      <li>Wine and Food Pairings: Elevate your dining experience with our expertly crafted wine and food pairing sessions. Discover the perfect harmony between flavors as we guide you through the art of selecting the right wines to complement your meals.</li>
+    </ol>
+
+    <h3>Why Choose Culinary Concierge?</h3>
+    <ul>
+      <li>Personalized Service: We understand that every palate is unique. Our dedicated team will work closely with you to tailor your culinary experience according to your preferences, dietary needs, and special requests.</li>
+      <li>Expertise and Connections: With years of experience in the culinary industry, we have built a strong network of renowned chefs, sommeliers, and local food experts. We leverage these connections to provide you with unparalleled access to the best culinary experiences.</li>
+      <li>Unforgettable Memories: Our goal is to create lasting memories through extraordinary gastronomic adventures. We strive to exceed your expectations, ensuring that each experience with us is nothing short of exceptional.</li>
+    </ul>
+
+    <h3>Terms and Conditions:</h3>
+    <p>Please review our Terms and Conditions <a href="terms.html">here</a> before using our services.</p>
+
+    <p>Whether you're looking to celebrate a special occasion, plan a memorable trip, or simply explore the world of food and flavors, Culinary Concierge is your trusted partner. Join us on a culinary journey that will tantalize your taste buds and ignite your senses.</p>
+  </section>
+
+  <footer>
+    &copy; 2022 Culinary Concierge. All rights reserved.
+  </footer>
+
+  <script>
+    // Scroll to section and highlight active link
+    document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll("nav a");
+
+      navLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+
+          const target = document.querySelector(this.getAttribute("href"));
+          const offset = target.offsetTop;
+
+          window.scrollTo({
+            top: offset,
+            behavior: "smooth"
+          });
+
+          // Remove active class from all links
+          navLinks.forEach(function(link) {
+            link.classList.remove("active");
+          });
+
+          // Add active class to the clicked link
+          this.classList.add("active");
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
